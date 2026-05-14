@@ -28,7 +28,7 @@ class HomePage extends React.Component {
   render() {
     return (
       <div className='homepage-container'>
-        <h2 className='homepage-header'>Boss Up On Life.</h2>
+        <h2 className='homepage-header'>IOU - UOME.</h2>
         <div className='homepage-body'><strong>Share</strong> bills and IOUs. <strong>Make sure</strong> everyone gets paid back.</div>
 
         <div className='img-container'>

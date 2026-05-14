@@ -13,4 +13,4 @@ COPY . .
 RUN npm install --legacy-peer-deps
 RUN bundle exec rake assets:precompile
 
-CMD ["bundle", "exec", "rails", "server", "-b", "0.0.0.0"]
+CMD bash -c "bundle exec rails server -b 0.0.0.0 -p ${PORT:-3000}"

@@ -3,7 +3,7 @@ services:
     name: iou-uome
     env: docker
     dockerfilePath: ./Dockerfile
-    plan: free
+    plan: starter
     envVars:
       - key: SECRET_KEY_BASE
         generateValue: true

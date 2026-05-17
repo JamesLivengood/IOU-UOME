@@ -16,7 +16,8 @@ WORKDIR /app
 # Install Ruby dependencies
 COPY Gemfile Gemfile.lock ./
 RUN bundle config set without 'development test' \
-    && bundle install
+    && bundle install \
+    && bundle update bcrypt
 
 # Install JS dependencies (no postinstall webpack run)
 COPY package.json ./
@@ -36,4 +37,4 @@ ENV RAILS_LOG_TO_STDOUT=true
 
 EXPOSE 3000
 
-CMD bash -c "bundle exec rails db:migrate && bundle exec rails server -b 0.0.0.0 -p ${PORT:-3000}"
+CMD bash -c "bundle exec rails db:migrate && bundle exec rails db:seed && bundle exec rails server -b 0.0.0.0 -p ${PORT:-3000}"

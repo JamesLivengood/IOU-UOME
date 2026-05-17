@@ -7,6 +7,8 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 require 'faker'
 
+exit if User.count > 0
+
 20.times do
   name = Faker::GameOfThrones.character
   email = name.downcase.split(' ').join('_')

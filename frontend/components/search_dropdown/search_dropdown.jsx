@@ -25,7 +25,7 @@ class SearchDropdown extends React.Component {
             user2_id: user.id})}
         key={ idx }>
         <li className='dropdown-item'>
-          <img src='https://dx0qysuen8cbs.cloudfront.net/assets/fat_rabbit/avatars/50-31b0bb2f5aec77f11d60a1dc3fa14c23a958fed79261b32e94a73e9c27473ebb.png'/>
+          <img src='/50-31b0bb2f5aec77f11d60a1dc3fa14c23a958fed79261b32e94a73e9c27473ebb.png'/>
           <div>{user.name}</div>
           </li>
     </button>

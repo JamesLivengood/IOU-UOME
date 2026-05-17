@@ -29,7 +29,7 @@ const userLoggedIn = (modal, currentUser, openModal, closeModal, logout) => {
 	return (<hgroup className="header-group">
     <div className="user-button-div">
       <button className="user-dropdown-button" onClick={()=>modalSwitch(modal, openModal, closeModal, 'userDropdown')}>
-        <img className='user-dropdown-img' src='https://dx0qysuen8cbs.cloudfront.net/assets/fat_rabbit/avatars/50-31b0bb2f5aec77f11d60a1dc3fa14c23a958fed79261b32e94a73e9c27473ebb.png'/>
+        <img className='user-dropdown-img' src='/50-31b0bb2f5aec77f11d60a1dc3fa14c23a958fed79261b32e94a73e9c27473ebb.png'/>
         <span>{currentUser.name}</span>
         <div className='caret'>▼</div>
         <Modal logout={logout}/>

@@ -2,7 +2,7 @@
   background: rgba(238, 238, 238, 0.8);
   position: fixed;
   top: 0;
-  bottom: -862px;
+  bottom: 0;
   right: 0;
   left: 0;
   z-index: 0;
@@ -28,14 +28,10 @@
 
 .create-bill-modal-div {
   background: white;
-  margin-bottom: 250px;
   border-radius: 5px;
   border: 1px solid rgb(153, 153, 153);
   box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 8px 0px;
   text-rendering: optimizeLegibility;
-  position: relative;
-  right: 616px;
-    top: 167px;
 }
 
 .create-bill-modal-div h2 {

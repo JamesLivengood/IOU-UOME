@@ -8,7 +8,7 @@ const DashboardChart = ({highestFriendBalance, friendAndBalanceArray}) => {
         <ul className='orange-dashboard-chart'>
           <OrangeMap highestFriendBalance={highestFriendBalance} friendAndBalanceArray={friendAndBalanceArray}/>
         </ul>
-        <img className='chart-main-pic' src='https://dx0qysuen8cbs.cloudfront.net/assets/fat_rabbit/person-2d59b69b3e7431884ebec1a55de75a4153a17c4050e6b50051ca90412e72cf96.png'></img>
+        <img className='chart-main-pic' src='/assets/person.png'></img>
         <ul className='green-dashboard-chart'>
           <GreenMap highestFriendBalance={highestFriendBalance} friendAndBalanceArray={friendAndBalanceArray}/>
         </ul>
@@ -47,11 +47,11 @@ const DashboardChartItem = ({owed, balance, name, id, highestFriendBalance}) => 
   const width = Math.abs(((balance / highestFriendBalance) * 210)).toString();
   const size = Math.sqrt(Math.abs(((balance / highestFriendBalance) * 225))).toString();
 
-  if (width > 40) {
+  if (width > 80) {
     return (
         <Link to={`/friend/${id}`}>
           <div className='dashboard-chart-item-div' style={{width:`${width}px`, fontSize:`${size}px`}}>
-            <div className='dashboard-chart-name' >{name}</div>
+            <nav className='dashboard-chart-name' >{name}</nav>
             <div className='dashboard-chart-amount'>${balance.toFixed(2)}</div>
           </div>
         </Link>
@@ -65,7 +65,7 @@ const DashboardChartItem = ({owed, balance, name, id, highestFriendBalance}) => 
       return (
         <Link to={`/friend/${id}`}>
           <div className='dashboard-chart-item-div' style={{width:`${thisWidth}px`, fontSize:`12px`}}>
-            <div className='dashboard-chart-name' >...</div>
+            <nav className='dashboard-chart-name' >...</nav>
           </div>
           <div className='filler-name'>{name}</div>
         </Link>);

@@ -18,7 +18,7 @@ class DashboardRight extends React.Component{
           let bill = this.props.currentUser.recent_activity[idx];
           li = <li>New Bill: ${bill.amount_originally_owed}</li>
         } else {
-          li = <li>payment brah</li>
+          li = <li>payment made</li>
         }
       }
       liArr.push(li);

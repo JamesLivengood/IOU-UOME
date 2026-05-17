@@ -15,9 +15,7 @@
  */
 
  body {
-    transform: scale(1.2);
-    transform-origin: 50% 0%;
-    // add prefixed versions too.
+    zoom: 1.2;
  }
 
 header {

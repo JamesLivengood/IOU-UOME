@@ -26,10 +26,6 @@
   flex-direction: column;
   justify-content: space-between;
   background: white;
-  margin-bottom: 400px;
-  position: absolute;
-  left: -630px;
-  top: 128px;
 }
 
 .add-friend-buttons {

@@ -34,34 +34,34 @@ class SignupForm extends React.Component{
     if (Object.values(this.props.errors).length > 0) {
       const errorsArr = Object.values(this.props.errors).map((err, idx) => <li key={idx}>{err}</li>);
       return (
-        <div className='signup-form-errors'>The following errors occurred:<ul>{errorsArr}</ul></div>
+        <div className="signup-form-errors">The following errors occurred:<ul>{errorsArr}</ul></div>
       );
     }
   }
 
   render() {
-
       return(
-        <div className='signup-page'>
-          <Link to='/'>
-            <img className='signup-page-logo' src="https://dx0qysuen8cbs.cloudfront.net/assets/fat_rabbit/logo-d23d9f9f3a93162ac760371c8e22fea7e14a9d8491b477e7925e551b14172ada.png"/>
+        <div className="signup-page">
+          <Link to="/">
+            <img className="signup-page-logo" src="/assets/logo.png"/>
           </Link>
-          <div className='signup-form-box'>
-            <h3 className='signup-introduce'>INTRODUCE YOURSELF</h3>
+          <div className="signup-form-box">
+            <h3 className="signup-introduce">INTRODUCE YOURSELF</h3>
             {this.receiveErrors()}
-            <div className='signup-submit-form'>
-              <form onSubmit = { this.handleSubmit }>
-                <div className='signup-hi'>Hi there! My name is</div>
-                  <input className='signup-name-input' type='text' name='name' value = {this.state.name} onChange = { this.handleChange }/>
-                <div className='signup-email-label'>Here’s my <strong>email address:</strong></div>
-                  <input className='signup-email-input' type='text' name='email' value = {this.state.email} onChange = { this.handleChange }/>
-                <div className='signup-password-label'>And here’s my <strong>password:</strong></div>
-                  <input className='signup-password-input' type='password' name='password' value = {this.state.password} onChange = { this.handleChange }/>
-                <button className='signup-submit-button'>Sign me up!</button>
+            <div className="signup-submit-form">
+              <form onSubmit={this.handleSubmit}>
+                <div className="signup-hi">Hi there! My name is</div>
+                  <input className="signup-name-input" type="text" name="name" value={this.state.name} onChange={this.handleChange}/>
+                <div className="signup-email-label">{"Here's my"} <strong>email address:</strong></div>
+                  <input className="signup-email-input" type="text" name="email" value={this.state.email} onChange={this.handleChange}/>
+                <div className="signup-password-label">{"And here's my"} <strong>password:</strong></div>
+                  <input className="signup-password-input" type="password" name="password" value={this.state.password} onChange={this.handleChange}/>
+                <button className="signup-submit-button">Sign me up!</button>
               </form>
+              <button onClick={() => this.props.demoLogin()} className="jamie-lannister-button">Demo Login to Jamie Lannister&apos;s Top Secret Account</button>
             </div>
           </div>
-       </div>
+        </div>
       );
   }
 }

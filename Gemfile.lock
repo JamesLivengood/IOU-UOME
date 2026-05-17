@@ -44,7 +44,7 @@ GEM
       activerecord (>= 3.2, < 6.0)
       rake (>= 10.4, < 13.0)
     arel (8.0.0)
-    bcrypt (3.1.11)
+    bcrypt (3.1.22)
     bindex (0.5.0)
     builder (3.2.3)
     byebug (10.0.0)
@@ -71,7 +71,7 @@ GEM
     execjs (2.7.0)
     faker (1.8.7)
       i18n (>= 0.7)
-    ffi (1.9.23)
+    ffi (1.17.4)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
     i18n (0.9.5)
@@ -189,7 +189,7 @@ PLATFORMS
 
 DEPENDENCIES
   annotate
-  bcrypt (~> 3.1.7)
+  bcrypt (>= 3.1.18)
   byebug
   capybara (~> 2.13)
   coffee-rails (~> 4.2)

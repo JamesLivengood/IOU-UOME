@@ -44,10 +44,10 @@ class PaymentModal extends React.Component {
         <div className='payment-pop-up'>
           <h3>Choose Payer</h3>
           <ul>
-            <li onClick={()=>this.setPaidUser('me')}><img src='https://dx0qysuen8cbs.cloudfront.net/assets/fat_rabbit/avatars/100-4c516cdaad9fa42b890727b03e49634a199eaba880df708835105dfa42fac74b.png'/>
+            <li onClick={()=>this.setPaidUser('me')}><img src='/100-4c516cdaad9fa42b890727b03e49634a199eaba880df708835105dfa42fac74b.png'/>
               {this.props.currentUser.name}
             </li>
-            <li onClick={()=>this.setPaidUser('other')}><img src='https://dx0qysuen8cbs.cloudfront.net/assets/fat_rabbit/avatars/100-4c516cdaad9fa42b890727b03e49634a199eaba880df708835105dfa42fac74b.png'/>
+            <li onClick={()=>this.setPaidUser('other')}><img src='/100-4c516cdaad9fa42b890727b03e49634a199eaba880df708835105dfa42fac74b.png'/>
               {this.props.otherUser.name}
             </li>
           </ul>
@@ -79,9 +79,9 @@ class PaymentModal extends React.Component {
           <div className='payment-modal-header'><div>Make payment</div></div>
 
           <div className='payment-form-pics'>
-            <img className='payment-icon' src='https://dx0qysuen8cbs.cloudfront.net/assets/fat_rabbit/avatars/100-4c516cdaad9fa42b890727b03e49634a199eaba880df708835105dfa42fac74b.png'/>
-            <img className='payment-arrow' src='https://dx0qysuen8cbs.cloudfront.net/assets/fat_rabbit/settle-up-arrow-83553d33b6848bbdfa3499d7e217748aab1f75ff2073ec5ac67cba5246e12459.png'/>
-            <img className='payment-icon' src='https://dx0qysuen8cbs.cloudfront.net/assets/fat_rabbit/avatars/100-4c516cdaad9fa42b890727b03e49634a199eaba880df708835105dfa42fac74b.png'/>
+            <img className='payment-icon' src='/100-4c516cdaad9fa42b890727b03e49634a199eaba880df708835105dfa42fac74b.png'/>
+            <img className='payment-arrow' src='/settle-up-arrow-83553d33b6848bbdfa3499d7e217748aab1f75ff2073ec5ac67cba5246e12459.png'/>
+            <img className='payment-icon' src='/100-4c516cdaad9fa42b890727b03e49634a199eaba880df708835105dfa42fac74b.png'/>
           </div>
 
           <div className='payment-modal-who-pay-who'>

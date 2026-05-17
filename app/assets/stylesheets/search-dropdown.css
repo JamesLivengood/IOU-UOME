@@ -5,10 +5,9 @@
   background: white;
   height: 200px;
   overflow: auto;
-  top: 205px;
-  left: -630px;
+  top: 135px;
+  left: 0;
   border: 1px solid rgb(187, 187, 187);
-
 }
 
 .search-dropdown-hidden {

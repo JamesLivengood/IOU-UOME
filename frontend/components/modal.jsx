@@ -58,9 +58,7 @@ function Modal({modal, closeModal, logout, owedBills, owedToBills, owedToBillsIn
   }
   if (backgroundOffClick){
     return (
-      <div>
-        <div className={backgroundColor} onClick={closeModal}>
-        </div>
+      <div className={backgroundColor} onClick={closeModal}>
         <div className="modal-box" onClick={e => e.stopPropagation()}>
           { component }
         </div>

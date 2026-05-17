@@ -133,7 +133,7 @@ h1 {
 .modal-background {
    position: fixed;
    top: 0;
-   bottom: -862px;
+   bottom: 0;
    right: 0;
    left: 0;
    background: transparent;

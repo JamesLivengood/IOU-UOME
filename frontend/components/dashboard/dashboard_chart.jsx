@@ -8,7 +8,7 @@ const DashboardChart = ({highestFriendBalance, friendAndBalanceArray}) => {
         <ul className='orange-dashboard-chart'>
           <OrangeMap highestFriendBalance={highestFriendBalance} friendAndBalanceArray={friendAndBalanceArray}/>
         </ul>
-        <img className='chart-main-pic' src='/assets/person.png'></img>
+        <img className='chart-main-pic' src='/person.png'></img>
         <ul className='green-dashboard-chart'>
           <GreenMap highestFriendBalance={highestFriendBalance} friendAndBalanceArray={friendAndBalanceArray}/>
         </ul>

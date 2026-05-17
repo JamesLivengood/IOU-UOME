@@ -13,9 +13,10 @@ RUN curl -fsSL https://deb.nodesource.com/setup_18.x | bash - \
 
 WORKDIR /app
 
-# Install Ruby dependencies
+# Install Ruby dependencies (install matching Bundler first so lock file is respected)
 COPY Gemfile Gemfile.lock ./
-RUN bundle config set without 'development test' \
+RUN gem install bundler:2.4.22 --no-document \
+    && bundle config set without 'development test' \
     && bundle install \
     && bundle update bcrypt
 
@@ -30,7 +31,7 @@ COPY . .
 RUN npm run build
 
 # Precompile Rails assets
-RUN RAILS_ENV=production SECRET_KEY_BASE=placeholder bundle exec rake assets:precompile --trace
+RUN RAILS_ENV=production SECRET_KEY_BASE=placeholder bundle exec rake assets:precompile
 
 ENV RAILS_ENV=production
 ENV RAILS_LOG_TO_STDOUT=true

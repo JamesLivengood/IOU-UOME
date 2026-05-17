@@ -29,7 +29,7 @@ COPY . .
 RUN npm run build
 
 # Precompile Rails assets
-RUN RAILS_ENV=production SECRET_KEY_BASE=placeholder bundle exec rake assets:precompile
+RUN RAILS_ENV=production SECRET_KEY_BASE=placeholder bundle exec rake assets:precompile --trace
 
 ENV RAILS_ENV=production
 ENV RAILS_LOG_TO_STDOUT=true
